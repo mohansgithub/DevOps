@@ -34,7 +34,41 @@ nodejsapp: digest: sha256:afe26f49f08b74f1221d56478766e376d0cd3d6c89e57c3d26df4a
 
 
 
+
 mohanraj@mohanraj-Vostro:~/REPOS/node_app$ sudo docker create --name nodejsappcon mohanraj123/mohantest:nodejsapp
 9123119ccf0d0136f49ea7d081946f68bb2c64c4eb9909a4af59c22826d66b45
+
+
+mohanraj@mohanraj-Vostro:~/REPOS/node_app$ sudo docker run -it -d --name nodejsappconsample mohanraj123/mohantest:nodejsapp bash
+feec2b554fe6e674c5f266550d31bf96a78eedb4173a8bff7339c2276e97d200
+mohanraj@mohanraj-Vostro:~/REPOS/node_app$ sudo docker exec -it nodejsappconsample bash
+root@feec2b554fe6:/# ls -al
+total 80
+drwxr-xr-x   1 root root 4096 Jul  7 15:00 .
+drwxr-xr-x   1 root root 4096 Jul  7 15:00 ..
+-rwxr-xr-x   1 root root    0 Jul  7 15:00 .dockerenv
+drwxr-xr-x   1 root root 4096 Mar 27  2018 bin
+drwxr-xr-x   2 root root 4096 May 30  2016 boot
+drwxr-xr-x   5 root root  360 Jul  7 15:00 dev
+drwxr-xr-x   1 root root 4096 Jul  7 15:00 etc
+drwxr-xr-x   2 root root 4096 May 30  2016 home
+drwxr-xr-x   1 root root 4096 Mar 27  2018 lib
+drwxr-xr-x   2 root root 4096 Mar 12  2018 lib64
+drwxr-xr-x   2 root root 4096 Mar 12  2018 media
+drwxr-xr-x   2 root root 4096 May 30  2016 mnt
+drwxr-xr-x   6 root root 4096 Mar 27  2018 nodejs
+drwxr-xr-x   2 root root 4096 Mar 12  2018 opt
+dr-xr-xr-x 350 root root    0 Jul  7 15:00 proc
+drwx------   2 root root 4096 Mar 12  2018 root
+drwxr-xr-x   5 root root 4096 Mar 12  2018 run
+drwxr-xr-x   2 root root 4096 Mar 12  2018 sbin
+drwxr-xr-x   2 root root 4096 Jun 10  2012 selinux
+drwxr-xr-x   2 root root 4096 Mar 12  2018 srv
+dr-xr-xr-x  13 root root    0 Jul  7 15:00 sys
+drwxrwxrwt   1 root root 4096 Mar 27  2018 tmp
+drwxr-xr-x   1 root root 4096 Mar 27  2018 usr
+drwxr-xr-x   1 root root 4096 Mar 27  2018 var
+
+
 
 
