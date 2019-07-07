@@ -4,4 +4,6 @@
 
 
 docker tag local-image:tagname new-repo:tagname
+
+sudo docker tag 035e37fecaa0 mohanraj123/mohantest:nodejsapp
 docker push new-repo:tagname
