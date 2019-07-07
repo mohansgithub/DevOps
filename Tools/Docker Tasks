@@ -32,3 +32,9 @@ a6f79260a59b: Mounted from readytalk/nodejs
 7e62d1c2f904: Mounted from readytalk/nodejs 
 nodejsapp: digest: sha256:afe26f49f08b74f1221d56478766e376d0cd3d6c89e57c3d26df4aef571d552d size: 952
 
+
+
+mohanraj@mohanraj-Vostro:~/REPOS/node_app$ sudo docker create --name nodejsappcon mohanraj123/mohantest:nodejsapp
+9123119ccf0d0136f49ea7d081946f68bb2c64c4eb9909a4af59c22826d66b45
+
+
