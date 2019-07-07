@@ -1,4 +1,23 @@
 
+mohanraj@mohanraj-Vostro:~/REPOS/docker-java-sample-webapp/src/main/docker$ sudo docker build -t tomcat:1 .
+Sending build context to Docker daemon    106kB
+Step 1/2 : FROM bitnami/tomcat:latest
+ ---> 76bd5d12225a
+Step 2/2 : COPY docker-java-sample-webapp-1.0-SNAPSHOT.war /bitnami/tomcat/data/
+ ---> 313b6ebf0411
+Successfully built 313b6ebf0411
+Successfully tagged tomcat:1
+
+
+
+
+
+
+
+
+
+
+
 docker build -t mohanraj123/mohantest .
 
 
