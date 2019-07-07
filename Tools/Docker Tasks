@@ -6,4 +6,29 @@
 docker tag local-image:tagname new-repo:tagname
 
 sudo docker tag 035e37fecaa0 mohanraj123/mohantest:nodejsapp
+
+mohanraj@mohanraj-Vostro:~/REPOS/node_app$ sudo docker images
+REPOSITORY              TAG                 IMAGE ID            CREATED             SIZE
+<none>                  <none>              0d1bf6fc6dca        12 minutes ago      319MB
+<none>                  <none>              d2c3e629649f        5 months ago        111MB
+<none>                  <none>              4b14031f7cbf        5 months ago        141MB
+ubuntu                  16.04               b0ef3016420a        6 months ago        117MB
+ubuntu                  latest              1d9c17228a9e        6 months ago        86.7MB
+jenkins/jenkins         latest              d3d24aa8ac99        9 months ago        730MB
+hello-world             latest              4ab4c602aa5e        10 months ago       1.84kB
+readytalk/nodejs        latest              035e37fecaa0        15 months ago       288MB
+mohanraj123/mohantest   nodejsapp           035e37fecaa0        15 months ago       288MB
+
+
+
+
+
 docker push new-repo:tagname
+
+mohanraj@mohanraj-Vostro:~/REPOS/node_app$ sudo docker push mohanraj123/mohantest:nodejsapp
+The push refers to repository [docker.io/mohanraj123/mohantest]
+679aacaadc67: Mounted from readytalk/nodejs 
+a6f79260a59b: Mounted from readytalk/nodejs 
+7e62d1c2f904: Mounted from readytalk/nodejs 
+nodejsapp: digest: sha256:afe26f49f08b74f1221d56478766e376d0cd3d6c89e57c3d26df4aef571d552d size: 952
+
