@@ -26,3 +26,8 @@ cd /bambooinstalldir/atlassian-bamboo-6.6.3/atlassian-bamboo
 
 mohanraj@mohanraj-Vostro:/bambooinstalldir/atlassian-bamboo-6.6.3/atlassian-bamboo/WEB-INF/classes$ vi bamboo-init.properties
 
+#bamboo.home=C:/bamboo/bamboo-home
+bamboo.home=/bamboohomedir 
+#(add this in the file)
+
+
