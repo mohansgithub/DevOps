@@ -83,7 +83,7 @@ https://docs.microsoft.com/en-gb/sql/linux/quickstart-install-connect-ubuntu?vie
 admin!123
 
 
-
+zip file location : sudo zip -r bamboohomedir_back.zip bamboohomedir
 
 sqlcmd: command not found on Ubuntu. How to fix it?
 If after installing Sql Server on Ubuntu you can’t run sqlcmd getting “sqlcmd: command not found” error then you need to check some things out.
