@@ -81,3 +81,29 @@ Tomcat started.
 https://docs.microsoft.com/en-gb/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-2017
 https://docs.microsoft.com/en-gb/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-2017
 admin!123
+
+
+
+
+sqlcmd: command not found on Ubuntu. How to fix it?
+If after installing Sql Server on Ubuntu you can’t run sqlcmd getting “sqlcmd: command not found” error then you need to check some things out.
+
+First of all, make sure that have mssql-tools installed. If you are not sure you can simply try to install it:
+
+sudo apt-get install mssql-tools
+and if you already have it installed you will get something like this:
+
+Reading package lists... Done
+Building dependency tree 
+Reading state information... Done
+mssql-tools is already the newest version (14.0.3.0-1).
+0 to upgrade, 0 to newly install, 0 to remove and 242 not to upgrade.
+Otherwise, it will be installed on your system. When everything is installed you may still get “sqlcmd: command not found” error when you try to run sqlcmd if you have no proper symlinks created.
+
+First of all, let’s see how this tool is called on your system. It might be called something like sqlcmd-13.0.1.0 or simply sqlcmd but it should be in /opt/mssql-tools/bin/ directory. Let’s see what we have there:
+
+sudo ls /opt/mssql-tools/bin/sqlcmd*
+After you get the name of the tool you can create a symlink:
+
+sudo ln -sfn /opt/mssql-tools/bin/sqlcmd /usr/bin/sqlcmd
+That’s it.
