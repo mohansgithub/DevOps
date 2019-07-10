@@ -31,3 +31,32 @@ bamboo.home=/bamboohomedir
 #(add this in the file)
 
 
+
+mohanraj@mohanraj-Vostro:/bambooinstalldir/atlassian-bamboo-6.6.3/atlassian-bamboo/WEB-INF/classes$ cat bamboo-init.properties
+## You can specify your bamboo.home property here or in your system environment variables.
+
+#bamboo.home=C:/bamboo/bamboo-home
+mohanraj@mohanraj-Vostro:/bambooinstalldir/atlassian-bamboo-6.6.3/atlassian-bamboo/WEB-INF/classes$ sudo vi bamboo-init.properties
+mohanraj@mohanraj-Vostro:/bambooinstalldir/atlassian-bamboo-6.6.3/atlassian-bamboo/WEB-INF/classes$ cd /bambooinstalldir/
+mohanraj@mohanraj-Vostro:/bambooinstalldir$ ls
+atlassian-bamboo-6.6.3  atlassian-bamboo-6.6.3.tar.gz
+mohanraj@mohanraj-Vostro:/bambooinstalldir$ cd atlassian-bamboo-6.6.3/
+mohanraj@mohanraj-Vostro:/bambooinstalldir/atlassian-bamboo-6.6.3$ ls
+atlassian-bamboo  conf      logs         README.txt  tomcat-docs  work
+bamboo.sh         lib       NOTICE       scripts     tools
+bin               licenses  README.html  temp        webapps
+mohanraj@mohanraj-Vostro:/bambooinstalldir/atlassian-bamboo-6.6.3$ cd bin
+mohanraj@mohanraj-Vostro:/bambooinstalldir/atlassian-bamboo-6.6.3/bin$ ls
+bamboobanner.txt              digest.sh        stop-bamboo.sh
+bootstrap.jar                 setclasspath.sh  tomcat-juli.jar
+catalina.sh                   setenv.sh        tomcat-native.tar.gz
+catalina-tasks.xml            shutdown.sh      tool-wrapper.sh
+commons-daemon.jar            start-bamboo.sh  version.sh
+commons-daemon-native.tar.gz  startup.sh
+mohanraj@mohanraj-Vostro:/bambooinstalldir/atlassian-bamboo-6.6.3/bin$ ./st
+start-bamboo.sh  startup.sh       stop-bamboo.sh   
+mohanraj@mohanraj-Vostro:/bambooinstalldir/atlassian-bamboo-6.6.3/bin$ ./start-bamboo.sh
+
+
+
+
