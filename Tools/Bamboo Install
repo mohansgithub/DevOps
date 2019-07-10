@@ -58,5 +58,24 @@ start-bamboo.sh  startup.sh       stop-bamboo.sh
 mohanraj@mohanraj-Vostro:/bambooinstalldir/atlassian-bamboo-6.6.3/bin$ ./start-bamboo.sh
 
 
+mohanraj@mohanraj-Vostro:/bambooinstalldir/atlassian-bamboo-6.6.3/bin$ sudo ./start-bamboo.sh 
+
+
+To run Bamboo in the foreground, start the server with start-bamboo.sh -fg
+
+Server startup logs are located in /bambooinstalldir/atlassian-bamboo-6.6.3/bin/logs/catalina.out
+
+Bamboo Server Edition
+   Version : 6.6.3
+                  
+
+If you encounter issues starting or stopping Bamboo Server, please see the Troubleshooting guide at https://confluence.atlassian.com/display/BAMBOO/Installing+and+upgrading+Bamboo
+
+Using CATALINA_BASE:   /bambooinstalldir/atlassian-bamboo-6.6.3
+Using CATALINA_HOME:   /bambooinstalldir/atlassian-bamboo-6.6.3
+Using CATALINA_TMPDIR: /bambooinstalldir/atlassian-bamboo-6.6.3/temp
+Using JRE_HOME:        /usr
+Using CLASSPATH:       /bambooinstalldir/atlassian-bamboo-6.6.3/bin/bootstrap.jar:/bambooinstalldir/atlassian-bamboo-6.6.3/bin/tomcat-juli.jar
+Tomcat started.
 
 
