@@ -5,3 +5,17 @@ sudo mv ~/Downloads/atlassian-bamboo-6.6.3.tar.gz  .
 ls -al
 sudo tar -xvf atlassian-bamboo-6.6.3.tar.gz
 
+mohanraj@mohanraj-Vostro:/bambooinstalldir$ cd ..
+mohanraj@mohanraj-Vostro:/$ sudo mkdir bamboohomedir
+
+ohanraj@mohanraj-Vostro:/$ ls -al
+total 128
+drwxr-xr-x  27 root root  4096 Jul 10 08:10 .
+drwxr-xr-x  27 root root  4096 Jul 10 08:10 ..
+drwxr-xr-x   2 root root  4096 Jul 10 08:10 bamboohomedir
+drwxr-xr-x   3 root root  4096 Jul 10 08:03 bambooinstalldir
+drwxr-xr-x   2 root root 12288 Jul  8 07:07 bin
+drwxr-xr-x   4 root root  4096 Jul  8 07:15 boot
+drwxrwxr-x   2 root root  4096 Apr 29  2018 cdrom
+drwxr-xr-x  21 root root  4300 Jul  7 16:10 dev
+
