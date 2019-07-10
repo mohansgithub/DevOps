@@ -1,0 +1,7 @@
+https://www.atlassian.com/software/bamboo/download?_ga=2.235418307.355220551.1562723697-679380710.1562723697
+sudo mkdir bambooinstalldir
+
+sudo mv ~/Downloads/atlassian-bamboo-6.6.3.tar.gz  .
+ls -al
+sudo tar -xvf atlassian-bamboo-6.6.3.tar.gz
+
