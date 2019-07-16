@@ -1,0 +1,8 @@
+
+
+check Traffic between two Linux Machines using netstat
+
+In Server 1 : netstat -anot 1 | grep <Server2 IP>
+In Server 2 : netstat -anot 1 | grep <Server1 IP>
+
+Check the Status it returns
