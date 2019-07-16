@@ -1,5 +1,17 @@
 
 
+CURL : Uploading to artifactory from local machine :
+curl -X PUT -u mv00503834@techmahindra.com:123djhahadfhfdshfsldhflsdflsdflsdjk -T atlassian-bamboo-6.9.2.tar.gz "https://artifactory.abcd.net/artifactory/generic-repo-local/"
+
+
+WGET : Using wget downloading the files to artifactory:
+----------------------------------------------------
+[root@hostname mohanrajv]# wget --user mv00503834@techmahindra.com --password=123djhahadfhfdshfsldhflsdflsdflsdjk "https://arifactory.abcd.net/artifactory/generic-repo-local/atlassian-bamboo-6.9.2.tar.gz" --no-check-certificate
+
+
+Changing the ownership of folder :
+----------------------------------
+chown -R confluence:confluence /apps/confluence/install/atlassian-confluence-6.13.4
 
 Making TAR ball
 -----------------
@@ -10,6 +22,11 @@ Making TAR ball to gunzip file
 gzip <tarball name>
 gzip atlassian-confluence-6.13.4.tar
 This will create .gz file
+
+Untar the tar folder
+-----------------------
+tar -xvf atlassian-confluence-6.13.4.tar.gz
+
 
 Copy file from one server to another using scp command :
 
@@ -23,6 +40,9 @@ systemctl start confluence
 systemctl restart confluence
 systemctl stop confluence
 systemctl status confluence
+
+Edit the Service files:
+ /usr/lib/systemd/system/confluence.service
 
 
 
