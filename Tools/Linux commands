@@ -1,6 +1,41 @@
 
 
-check Traffic between two Linux Machines using netstat
+
+Making TAR ball
+-----------------
+tar -cvf <tar file name.tar> <folder to maketar ball>
+tar -cvf atlassian-confluence-6.13.4.tar atlassian-confluence-6.13.4
+
+Making TAR ball to gunzip file
+gzip <tarball name>
+gzip atlassian-confluence-6.13.4.tar
+This will create .gz file
+
+Copy file from one server to another using scp command :
+
+scp /apps/confluence/install/atlassian-confluence-6.13.4.tar.gz mohanrajv@hosname:/home/mohanraj/
+
+
+Checking Services :
+-------------------
+
+systemctl start confluence
+systemctl restart confluence
+systemctl stop confluence
+systemctl status confluence
+
+
+
+Softlinks in Linux
+------------------
+
+rm /apps/confluence/install/confluence (deletes exsisting pointing folder)
+ln -s /apps/confluence/install/atlassian-confluence-6.9.2 /apps/confluence/install/confluence (link to new folder)
+
+NOTE : This helps to have old backup of software point new versions just using softlink
+
+Check Traffic between two Linux Machines using netstat
+-------------------------------------------------------
 
 In Server 1 : netstat -anot 1 | grep <Server2 IP>
 In Server 2 : netstat -anot 1 | grep <Server1 IP>
