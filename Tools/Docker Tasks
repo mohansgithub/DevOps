@@ -1,4 +1,33 @@
 
+
+Docker Login:
+-------------
+
+[root@Dockervm ~]# docker login --username=mohanraj123
+Password:
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+[root@Dockervm ~]# sudo docker push mohanraj123/pythontest:pythontest01
+The push refers to repository [docker.io/mohanraj123/pythontest]
+46b9f7e335d3: Pushed
+951af92ca257: Pushed
+1a52dabcd439: Pushed
+5939f3f60138: Pushed
+b24438cea2cc: Mounted from library/python
+c76a8d0f7f24: Mounted from library/python
+b4074dfd8a23: Mounted from library/python
+9f72e27f9aa4: Mounted from library/python
+0fe19df8b8f8: Mounted from library/python
+b17cc31e431b: Mounted from library/python
+12cb127eee44: Mounted from library/python
+604829a174eb: Mounted from library/python
+fbb641a8b943: Mounted from library/python
+pythontest01: digest: sha256:77b6fc115cd6343ea3acad423facd5daf4145a83cb66aba02d6ceeb0757f315d size: 3062
+[root@Dockervm ~]#
+
 mohanraj@mohanraj-Vostro:~/REPOS/docker-java-sample-webapp/src/main/docker$ sudo docker build -t tomcat:1 .
 Sending build context to Docker daemon    106kB
 Step 1/2 : FROM bitnami/tomcat:latest
