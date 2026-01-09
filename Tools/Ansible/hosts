@@ -1,0 +1,5 @@
+## [local]
+## localhost ansible_connection=local
+[dev]
+172.31.39.73
+
