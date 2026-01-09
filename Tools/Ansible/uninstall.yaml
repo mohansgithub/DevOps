@@ -1,0 +1,24 @@
+---
+- name: Install common Amazon Linux tools
+  hosts: all
+  become: yes
+
+  vars:
+    common_tools:
+      - git
+      - wget
+      - unzip
+      - zip
+      - tar
+      - vim
+      - nano
+      - tree
+  tasks:
+    - name: Update package cache
+      dnf:
+        update_cache: yes
+
+    - name: Install common tools
+      dnf:
+        name: "{{ common_tools }}"
+        state: absent
