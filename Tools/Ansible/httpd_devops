@@ -1,0 +1,41 @@
+---
+- name: Install Apache and deploy Hello DevOps page
+  hosts: all
+  become: yes
+
+  vars:
+    web_root: /var/www/html
+    index_file: "{{ web_root }}/index.html"
+
+  tasks:
+    - name: Update package cache
+      dnf:
+        update_cache: yes
+
+    - name: Install httpd
+      dnf:
+        name: httpd
+        state: present
+
+    - name: Start and enable httpd service
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+
+    - name: Create index.html with Hello DevOps content
+      copy:
+        dest: "{{ index_file }}"
+        content: |
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <title>DevOps</title>
+          </head>
+          <body>
+            <h1>Hello DevOps</h1>
+          </body>
+          </html>
+        owner: apache
+        group: apache
+        mode: '0644'
